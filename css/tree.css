@@ -1,0 +1,101 @@
+/*
+HangBoto - Jason Bevans
+
+---
+
+/*******************************
+  Table of Contents
+
+  1.0 Robot + Tree Styles
+*******************************/
+
+/**********************************/
+/******* 1.0 Robot + Tree Styles *******/
+/**********************************/
+.bg-head {
+  width: 82px;
+  height: 38px;
+  top: 296px;
+  left: 95px;
+  z-index: 3;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -344px -153px;
+}
+
+.bg-body {
+  width: 46px;
+  height: 38px;
+  top: 338px;
+  left: 113px;
+  z-index: 3;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -446px -153px;
+}
+
+.bg-left-arm {
+  width: 21px;
+  height: 36px;
+  top: 342px;
+  left: 98px;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -512px -153px;
+}
+
+.bg-right-arm {
+  width: 21px;
+  height: 36px;
+  top: 342px;
+  left: 152px;
+  z-index: 2;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -553px -153px;
+}
+
+.bg-left-leg {
+  width: 34px;
+  height: 70px;
+  top: 365px;
+  left: 105px;
+  z-index: 2;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -344px -211px;
+}
+
+.bg-right-leg {
+  width: 29px;
+  height: 69px;
+  top: 367px;
+  left: 132px;
+  z-index: 2;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -398px -211px;
+}
+
+.bg-ground {
+  width: 385px;
+  height: 123px;
+  top: 360px;
+  left: 20px;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -344px -10px;
+}
+
+.bg-tree {
+  width: 314px;
+  height: 374px;
+  top: 65px;
+  left: 37px;
+  z-index: 2;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -10px -10px;
+}
+
+.bg-rope {
+  width: 30px;
+  height: 72px;
+  top: 265px;
+  z-index: 1;
+  left: 120px;
+  position: absolute;
+  background: url('../images/tree_sprites.png') -344px -301px;
+}

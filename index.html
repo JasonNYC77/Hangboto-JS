@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HangBoto - By Jason Bevans</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="This is a trivia game created by Jason Bevans" />
+    <meta name="keywords" content="hangboto, game, Jason, Bevans" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Baloo+Bhaijaan|Raleway:100,400,700"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/hangboto.ico" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/play.css" />
+    <link rel="stylesheet" href="css/tree.css" />
+  </head>
+  <body>
+    <canvas id="world"></canvas>
+    <header>
+      <a href="#">
+        <img alt="HangBoto" title="HangBoto" class="logo" src="images/logo.png" />
+      </a>
+      <span class="btn-menu"><img src="images/menu.svg" /></span>
+    </header>
+    <div class="content">
+      <a class="btn play">
+        <svg
+          id="play"
+          viewBox="0 0 163 163"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          ="0px"
+        >
+          <g fill="none">
+            <g transform="translate(2.000000, 2.000000)" stroke-width="4">
+              <path
+                d="M10,80 C10,118.107648 40.8923523,149 79,149 L79,149 C117.107648,149 148,118.107648 148,80 C148,41.8923523 117.107648,11 79,11"
+                id="lineOne"
+                stroke="#A5CB43"
+              ></path>
+              <path
+                d="M105.9,74.4158594 L67.2,44.2158594 C63.5,41.3158594 58,43.9158594 58,48.7158594 L58,109.015859 C58,113.715859 63.4,116.415859 67.2,113.515859 L105.9,83.3158594 C108.8,81.1158594 108.8,76.6158594 105.9,74.4158594 L105.9,74.4158594 Z"
+                id="triangle"
+                stroke="#A3CD3A"
+              ></path>
+              <path
+                d="M159,79.5 C159,35.5933624 123.406638,0 79.5,0 C35.5933624,0 0,35.5933624 0,79.5 C0,123.406638 35.5933624,159 79.5,159 L79.5,159"
+                id="lineTwo"
+                stroke="#A5CB43"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </a>
+      <div id="game">
+        <div class="tree">
+          <div id="tree"></div>
+          <div class="status">
+            <div id="status"></div>
+          </div>
+        </div>
+
+        <div class="hint"></div>
+        <div class="guesses">
+          <ul></ul>
+        </div>
+        <div class="btn-toolbar">
+          <div class="btn-group btn-group-med keyboard"></div>
+          <div class="restartContainer">
+            <a class="btn restart">Start Over</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="menu col-xs-12 col-sm-6 block-revealer">
+      <div class="revealer-content">
+        <span class="btn-close"><img src="images/close.svg" /></span>
+        <ul class="menu-inner">
+          <li class="menu-item">
+            <a class="menu-link restart">Start Over</a>
+          </li>
+           <li class="menu-item">
+            <a class="menu-link restart" href="#">Settings</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="http://mycrashcourse.info/code/hangboto.zip" target="_blank">Download</a>
+          </li>
+        </ul>
+      </div>
+      <div class="revealer-animation"></div>
+    </nav>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/hangman.js"></script>
+  </body>
+</html>
